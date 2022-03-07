@@ -4,8 +4,74 @@
     display: flex;
     width: 100%;
     position: fixed;
-    background-color: aqua;
-    @media screen and ( min-width: 768px){
-        background-color: green;
+    background-color: #242F36;
+    z-index: 1000;
+}
+
+.header-inner-container {
+    width: 100%;
+}
+
+.header-list {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+.header-list-title {
+    color: #5A819C;
+    padding: 33px 0;
+    font-size: 24px;
+
+    &:hover {
+        color: white;
+
+        .mega-menu {
+            display: block;
+        }
+    }
+}
+
+
+
+.header-list-item{
+    padding-left: 40px;
+    text-decoration: none;
+    height: 100%;
+
+    &:visited {
+        color: #5A819C;
+    }
+
+    &:hover {
+        color: white;
+    }
+}
+
+
+.mega-menu {
+    display: none;
+    position: absolute;
+    background-color: #242F36;
+    padding: 15px 20px;
+    border: 1px solid white;
+    top: 94px;
+}
+
+.mega-menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mega-list-item {
+    color: #5A819C;
+
+}
+
+.mega-list-item a {
+    color: #5A819C;
+
+    &:visited {
+        color: white;
     }
 }

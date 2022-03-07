@@ -1,7 +1,44 @@
 /* ======== footer ======== */
 
 .footer {
-    background-color: yellow;
+    background-color: #242F36;
     display: flex;
     width: 100%;
+}
+
+.footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    list-style-type: none;
+    color: #5A819C;
+    padding-inline-start: 0;
+    
+    @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #5A819C;
+
+    &:visited {
+        color: gold;
+    }
+
+    &:hover {
+        color: white;
+    }
+}
+
+.footer-list-item {
+    padding-left: 30px;
+
+    &:hover {
+        color: white;
+    }
 }

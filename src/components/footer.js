@@ -3,7 +3,12 @@ import  React from "react";
 export const Footer = () => {
     return(
         <div className="footer">
-            <h1>This is the footer de la Tiempo</h1>
+            <ul className="footer-list">
+                <li className="footer-list-item"><a href="mailto:timeexe@gmail.com">Send Email</a></li>
+                <li className="footer-list-item">Facebook</li>
+                <li className="footer-list-item">Instagram</li>
+                <li className="footer-list-item">818.359.0055</li>
+            </ul>
         </div>
     )
 } 

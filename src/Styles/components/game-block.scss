@@ -1,1 +1,46 @@
 /* ======== game-block ======== */
+
+.game-block {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.game-block-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;        
+    }
+}
+
+.game-block-img {
+    display: flex;
+    width: 100%;
+}
+
+.game-block-game-img {
+    display: flex;
+    width: 100%;
+}
+
+.game-block-text {
+    background-color: #242F36;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+    }
+}
+
+.game-block-text h1 {
+    color: #5A819C;
+    text-align: center;
+}
