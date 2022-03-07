@@ -1,13 +1,26 @@
-import  React from "react";
+import React from "react";
+import { footerItems } from "../mock-data/footer";
 
 export const Footer = () => {
-    return(
+    return (
         <div className="footer">
             <ul className="footer-list">
-                <li className="footer-list-item"><a href="mailto:timeexe@gmail.com">Send Email</a></li>
-                <li className="footer-list-item">Facebook</li>
-                <li className="footer-list-item">Instagram</li>
-                <li className="footer-list-item">818.359.0055</li>
+                {
+                    footerItems.map((item) => {
+                        const { link, text } = item;
+
+                        return (
+                            <li className="footer-list-item">
+                                {
+                                    link
+                                    ?<a href={link}>{text}</a>
+                                    :text
+                                }
+                            </li>
+                        ) 
+                    })
+                }
+
             </ul>
         </div>
     )
