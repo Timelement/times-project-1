@@ -1,7 +1,8 @@
 import React from "react";
+import { games } from "../mock-data/games";
 
 export const Header = () => {
-    return(
+    return (
         <div className="header">
             <div className="header-inner-container">
                 <ul className="header-list">
@@ -16,15 +17,20 @@ export const Header = () => {
                         </span>
                         <div className="mega-menu">
                             <ul className="mega-menu-list">
-                                <li className="mega-list-item">
-                                    <a href="#dark-souls">Dark Souls</a>
-                                </li>
-                                <li className="mega-list-item">
-                                    <a href="#kotor">Kotor</a>
-                                </li>
-                                <li className="mega-list-item">
-                                    <a href="#metal-gear-solid">Metal Gear Solid</a>
-                                </li>
+
+                                {
+                                    games.map((game) => {
+                                        const { id, title } = game;
+
+                                        return (
+                                            <li className="mega-list-item">
+                                                <a href={`#${id}`}>{title}</a>
+                                            </li>
+                                        )
+                                    }
+
+                                    )
+                                }
                             </ul>
                         </div>
                     </li>

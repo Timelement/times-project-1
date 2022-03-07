@@ -2,26 +2,36 @@ export const games = [
     {
         id: 'dark-souls',
         imgSrc: 'https://tinyurl.com/4dwmse5a',
-        gameText: 'Dark Souls 1',
+        longTitle: 'Dark Souls',
+        shortName: 'DS',
+        title: 'Dark Souls'
     },
     {
         id: 'kotor',
         imgSrc: 'https://tinyurl.com/bpastw7z',
-        gameText: 'Star Wars: Knights of the Old Republic',
+        longTitle: 'Star Wars: Knights of the Old Republic',
+        shortName: 'KOTOR',
+        title: 'KOTOR',
     },
     {
         id: 'metal-gear-solid',
         imgSrc: 'https://tinyurl.com/4cwkacs7',
-        gameText: 'Metal Gear Solid',
+        longTitle: 'Metal Gear Solid',
+        shortName: 'MGS',
+        title: 'Metal Gear Solid',
     },
     {
         id: 'ff14',
         imgSrc: 'https://tinyurl.com/4dyafufu',
-        gameText: 'Final Fantasy 14',
+        longTitle: 'Final Fantasy 14',
+        shortName: 'FFXIV',
+        title: 'FFXIV',
     },
     {
         id: 'mass-effect',
         imgSrc: 'https://tinyurl.com/2p8nedb6',
-        gameText: 'Mass Effect',
+        longTitle: 'Mass Effect',
+        shortName: 'ME',
+        title: 'Mass Effect',
     },
 ];
