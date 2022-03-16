@@ -9,77 +9,37 @@ export const DiceRoller = () => {
 
     const [rollState, setRollState] = useState(0);
 
-    const [nameState, setNameState] = useState("Jong");
-
-    const rollD4 = () => {
-        const result = (Math.floor(Math.random() * 4) + 1);
+    const rollDice = (number) => {
+        const result = (Math.floor(Math.random() * number) + 1);
 
         setRollState(result);
     };
-
-    const rollD6 = () => {
-        const result = (Math.floor(Math.random() * 6) + 1);
-
-        setRollState(result);
-    };
-
-    const rollD8 = () => {
-        const result = (Math.floor(Math.random() * 8) + 1);
-
-        setRollState(result);
-    };
-
-    const rollD10 = () => {
-        const result = (Math.floor(Math.random() * 10) + 1);
-
-        setRollState(result);
-    };
-
-    const rollD12 = () => {
-        const result = (Math.floor(Math.random() * 12) + 1);
-
-        setRollState(result);
-    };
-
-    const rollD20 = () => {
-        const result = (Math.floor(Math.random() * 20) + 1);
-
-        setRollState(result);
-    };
-
-    const changeName = (name) => {
-        setNameState(name);
-    }
 
 
 
     return (
         <div className='dice'>
             <div className='dice-result'>
-                {nameState}
                 {rollState}
             </div>
             <div className='dice-container'>
-                <button className='btn' onClick={() => rollD4()}>
+                <button className='btn' onClick={() => rollDice(4)}>
                     <img className='dice-img' src={D4} />
                 </button>
-                <button className='btn' onClick={() => rollD6()}>
+                <button className='btn' onClick={() => rollDice(6)}>
                     <img className='dice-img' src={D6} />
                 </button>
-                <button className='btn' onClick={() => rollD8()}>
+                <button className='btn' onClick={() => rollDice(8)}>
                     <img className='dice-img' src={D8} />
                 </button>
-                <button className='btn' onClick={() => rollD10()}>
+                <button className='btn' onClick={() => rollDice(10)}>
                     <img className='dice-img' src={D10} />
                 </button>
-                <button className='btn' onClick={() => rollD12()}>
+                <button className='btn' onClick={() => rollDice(12)}>
                     <img className='dice-img' src={D12} />
                 </button>
-                <button className='btn' onClick={() => rollD20()}>
+                <button className='btn' onClick={() => rollDice(20)}>
                     <img className='dice-img' src={D20} />
-                </button>
-                <button className='btn' onClick={() => changeName("Desu")}>
-                    Button
                 </button>
             </div>
         </div>
