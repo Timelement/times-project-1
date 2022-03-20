@@ -1,8 +1,31 @@
 /* ======== dice-roller ======== */
 .dice {
     background-color: #242F36;
+    width: 100%;
+}
+
+.dice-result {
+    width: 100%;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.dice-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .btn {
     background: transparent;
+    border: none;
+}
+
+.roll-result {
+    color: aqua;
+    font-size: 100px;
+}
+.dice-crit {
+    color: red;
+    font-size: 100px;
 }

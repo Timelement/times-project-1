@@ -9,18 +9,31 @@ export const DiceRoller = () => {
 
     const [rollState, setRollState] = useState(0);
 
+    const [critState, setCritState] = useState('');
+
+    const [nameState, setNameState] = useState('');
+
     const rollDice = (number) => {
         const result = (Math.floor(Math.random() * number) + 1);
-
+        critCheck(result, number);
         setRollState(result);
     };
 
-
-
+    const critCheck = (roll, max) => {
+        if (roll === 1) {
+            setCritState("CRITICAL FAILURE");
+        } else if (roll === max) {
+            setCritState("CRITICAL SUCCESS!!");
+        } else {
+            setCritState('');
+        }
+    };
+    
     return (
         <div className='dice'>
             <div className='dice-result'>
-                {rollState}
+                <h1 className='roll-result'>{rollState}</h1>
+                <h1 className='dice-crit'>{critState}</h1>
             </div>
             <div className='dice-container'>
                 <button className='btn' onClick={() => rollDice(4)}>
