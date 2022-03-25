@@ -4,7 +4,8 @@ export const games = [
         imgSrc: 'https://tinyurl.com/4dwmse5a',
         longTitle: 'Dark Souls',
         shortName: 'DS',
-        title: 'Dark Souls'
+        title: 'Dark Souls',
+        genre: ['Action', 'Role-playing'],
     },
     {
         id: 'kotor',
@@ -12,6 +13,7 @@ export const games = [
         longTitle: 'Star Wars: Knights of the Old Republic',
         shortName: 'KOTOR',
         title: 'KOTOR',
+        genre: ['Sci-fi', 'Role-playing'],
     },
     {
         id: 'metal-gear-solid',
@@ -19,6 +21,7 @@ export const games = [
         longTitle: 'Metal Gear Solid',
         shortName: 'MGS',
         title: 'Metal Gear Solid',
+        genre: ['Action-adventure', 'Stealth'],
     },
     {
         id: 'ff14',
@@ -26,6 +29,7 @@ export const games = [
         longTitle: 'Final Fantasy 14',
         shortName: 'FFXIV',
         title: 'FFXIV',
+        genre: ['MMORPG', 'Fantasy'],
     },
     {
         id: 'mass-effect',
@@ -33,6 +37,7 @@ export const games = [
         longTitle: 'Mass Effect',
         shortName: 'ME',
         title: 'Mass Effect',
+        genre: ['Action', 'Role-playing', 'Sci-fi'],
     },
     {
         id: 'dota-2',
@@ -40,6 +45,7 @@ export const games = [
         longTitle: 'Dota 2',
         shortName: 'Dota 2',
         title: 'Dota 2',
+        genre: 'MOBA',
     },
     {
         id: 'jet-set-radio',
@@ -47,6 +53,7 @@ export const games = [
         longTitle: 'Jet Set Radio',
         shortName: 'JSR',
         title: 'Jet Set Radio',
+        genre: ['Platform', 'Action', 'Sports'],
     },
     {
         id: 'civ-5',
@@ -54,6 +61,7 @@ export const games = [
         longTitle: 'Sid Meier\'s\ Civilization V',
         shortName: 'Civ 5',
         title: 'Civ 5',
+        genre: ['Turn-base Strategy', '4X'],
     },
     {
         id: 'fallout-new-vegas',
@@ -61,6 +69,7 @@ export const games = [
         longTitle: 'Fallout: New Vegas',
         shortName: 'FNV',
         title: 'Fallout: New Vegas',
+        genre: ['Action', 'Role-playing'],
     },
     {
         id: 'disco-elysium',
@@ -68,5 +77,6 @@ export const games = [
         longTitle: 'Disco Elysium',
         shortName: 'Disco Elysium',
         title: 'Disco Elysium',
+        genre: 'Role-playing',
     },
 ];
