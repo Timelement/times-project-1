@@ -61,7 +61,7 @@ export const games = [
         longTitle: 'Sid Meier\'s\ Civilization V',
         shortName: 'Civ 5',
         title: 'Civ 5',
-        genre: ['Turn-base Strategy', '4X'],
+        genre: ['Turn-based Strategy', '4X'],
     },
     {
         id: 'fallout-new-vegas',
@@ -80,3 +80,5 @@ export const games = [
         genre: 'Role-playing',
     },
 ];
+
+export const genres = ['Action', 'Sci-fi', 'Role-playing', 'Stealth', 'MMORPG', 'Fantasy', 'MOBA', 'Platform', 'Sports', 'Turn-based Strategy', '4X'];

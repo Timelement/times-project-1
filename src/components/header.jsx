@@ -1,7 +1,7 @@
 import React from "react";
-import { games } from "../mock-data/games";
+import { games, genres } from "../mock-data/games";
 
-export const Header = () => {
+export const Header = ({handleUpdate}) => {
     return (
         <div className="header">
             <div className="header-inner-container">
@@ -31,6 +31,29 @@ export const Header = () => {
 
                                     )
                                 }
+                            </ul>
+                        </div>
+                    </li>
+                    <li className="header-list-title">
+                        <span className="header-list-item">
+                            Genres
+                        </span>
+                        <div className="mega-menu">
+                            <ul className="mega-menu-list">
+                                {
+                                    genres.map((genre) => {
+
+                                        return (
+                                            <li className="mega-list-item">
+                                                <div className="" onClick={() => handleUpdate(genre)}>
+                                                    {genre}
+                                                </div>
+                                            </li>
+                                        )
+                                    })
+                                }
+
+
                             </ul>
                         </div>
                     </li>
