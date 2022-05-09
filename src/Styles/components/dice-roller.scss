@@ -15,10 +15,28 @@
     flex-wrap: wrap;
     width: 100%;
 }
+.dice-img {
+    width: 100%;
+    
+}
+
+#dice-hidden {
+    display: none;
+}
 
 .btn {
     background: transparent;
     border: none;
+    width: 75px;
+    height: 75px;
+}
+.dice-display {
+    background-color: fuchsia;
+    border: seagreen dotted 25px;
+    width: 200px;
+    height: 100px;
+    margin: 50px 45%;
+    cursor: pointer;
 }
 
 .roll-result {

@@ -28,32 +28,45 @@ export const DiceRoller = () => {
             setCritState('');
         }
     };
-    
+
+    const diceHidden = () => {
+        let diceDiv = document.getElementById('dice-hidden');
+        if (diceDiv.style.display === "none") {
+            diceDiv.style.display = "block";
+          } else {
+            diceDiv.style.display = "none";
+          }
+
+    };
+
     return (
         <div className='dice'>
-            <div className='dice-result'>
-                <h1 className='roll-result'>{rollState}</h1>
-                <h1 className='dice-crit'>{critState}</h1>
-            </div>
-            <div className='dice-container'>
-                <button className='btn' onClick={() => rollDice(4)}>
-                    <img className='dice-img' src={D4} />
-                </button>
-                <button className='btn' onClick={() => rollDice(6)}>
-                    <img className='dice-img' src={D6} />
-                </button>
-                <button className='btn' onClick={() => rollDice(8)}>
-                    <img className='dice-img' src={D8} />
-                </button>
-                <button className='btn' onClick={() => rollDice(10)}>
-                    <img className='dice-img' src={D10} />
-                </button>
-                <button className='btn' onClick={() => rollDice(12)}>
-                    <img className='dice-img' src={D12} />
-                </button>
-                <button className='btn' onClick={() => rollDice(20)}>
-                    <img className='dice-img' src={D20} />
-                </button>
+            <button className='btn dice-display' onClick={() => diceHidden()}>Roll some Dice?</button>
+            <div id='dice-hidden'>
+                <div className='dice-result'>
+                    <h1 className='roll-result'>{rollState}</h1>
+                    <h1 className='dice-crit'>{critState}</h1>
+                </div>
+                <div className='dice-container'>
+                    <button className='btn' onClick={() => rollDice(4)}>
+                        <img className='dice-img' src={D4} />
+                    </button>
+                    <button className='btn' onClick={() => rollDice(6)}>
+                        <img className='dice-img' src={D6} />
+                    </button>
+                    <button className='btn' onClick={() => rollDice(8)}>
+                        <img className='dice-img' src={D8} />
+                    </button>
+                    <button className='btn' onClick={() => rollDice(10)}>
+                        <img className='dice-img' src={D10} />
+                    </button>
+                    <button className='btn' onClick={() => rollDice(12)}>
+                        <img className='dice-img' src={D12} />
+                    </button>
+                    <button className='btn' onClick={() => rollDice(20)}>
+                        <img className='dice-img' src={D20} />
+                    </button>
+                </div>
             </div>
         </div>
     )
