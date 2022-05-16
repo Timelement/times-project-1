@@ -10,7 +10,7 @@ const filteredGames = games.filter((game) => {
     if (hasMatch) return game;
     return false;
 })
-console.log(filteredGames);
+// console.log(filteredGames);
     return (
         <div className="game-block">
             {
