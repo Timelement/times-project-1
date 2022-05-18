@@ -17,7 +17,6 @@ export const InputForm = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(userName);
         setDisplayState(userName.name);
         // setUserName({name:''})
 
@@ -31,16 +30,16 @@ export const InputForm = () => {
         // }
     };
 
-    const debounceEvent = (callback, time) => {
-        let interval;
-        return (...args) => {
-            clearTimeout(interval);
-            interval = setTimeout(() => {
-                interval = null;
-                callback(...args);
-            }; time);
-        };
-    };
+    // const debounceEvent = (callback, time) => {
+    //     let interval;
+    //     return (...args) => {
+    //         clearTimeout(interval);
+    //         interval = setTimeout(() => {
+    //             interval = null;
+    //             callback(...args);
+    //         }; time);
+    //     };
+    // };
 
 
     return (
